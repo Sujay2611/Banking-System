@@ -1,0 +1,61 @@
+<html>
+<head>
+        <style>
+                input {
+        
+        width: 50%;
+        padding: 10px 20px;
+        padding-left:0px;
+        margin: 8px 0;
+        border:2px solid red;
+        border-radius:4px;
+        box-sizing: border-box;
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        form
+        {
+        padding-left:0px;
+        border:2px solid white;
+        display:inline-block;
+        
+        }
+        body{
+        padding-left:0px;
+        background-repeat: no-repeat;
+        background-size: 1500px 3000px;
+        font-family:monospace;
+        font-size:15px;
+        text-align:center;
+        background-color:lightblue;
+        }
+        p{
+        color:white;
+        align:center;
+        }
+        </style>
+ <title>Branch name update</title>
+</head>
+<body>
+<h1 style="text-align:center">Branch Details</h1>
+<form action="update1.php" method="post">
+   
+    <p>
+        <label for="IFSC_CODE">IFSC CODE:</label>
+        <input type="text" name="IFSC" id="IFSC_CODE">
+    </p>
+    <p>
+        <label for="Branch_number">NEW BRANCH NUMBER:</label>
+        <input type="text" name="branchno" id="Branch_number">
+    </p>
+    
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+	input {
+
+  width: 50%;
+  padding: 10px 20px;
+  padding-left:0px;
+  margin: 8px 0;
+  border:2px solid red;
+  border-radius:4px;
+  box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form
+{
+	padding-left:0px;
+	border:2px solid white;
+	display:inline-block;
+	
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+  .button:after {
+  content: "";
+  background: #90EE90
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+body{
+	padding-left:0px;
+	background-repeat: no-repeat;
+	background-size: 1500px 3000px;
+	font-family:monospace;
+	font-size:15px;
+	text-align:center;
+	background-color:lightblue;
+}
+p{
+	color:white;
+	align:center;
+}
+</style>
+</head>
+<body>
+  <h1>Deletion</h1>
+        <a href="delete1.html">
+        <input type="button" class="button" name="bank1" value="Branch Table"></input></a>
+        <a href="delete2.html">
+        <input type="button" class="button" name="bank1" value="Customer Table"></input></a>
+</body>
+</html>

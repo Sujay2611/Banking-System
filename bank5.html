@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+		input {
+
+width: 50%;
+padding: 10px 20px;
+padding-left:0px;
+margin: 8px 0;
+border:2px solid red;
+border-radius:4px;
+box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+background-color: #4CAF50;
+border: none;
+color: white;
+
+margin: 4px 2px;
+cursor: pointer;
+}
+form
+{
+  padding-left:0px;
+  border:2px solid white;
+  display:inline-block;
+  
+}
+body{
+  padding-left:0px;
+  //background-image:url("spa.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px 3000px;
+  font-family:monospace;
+  font-size:15px;
+  text-align:center;
+  background-color:lightblue;
+}
+h1{
+color:white;
+font-size:20px;
+}
+p{
+  color:white;
+  align:center;
+}
+</style>
+<title>Customer Account Form</title>
+</head>
+<body>
+<h1 style="text-align:center">Account Form</h1>
+<form action="insert5.php" method="post">
+    <p>
+        <label for="Customer_account_number">Customer account number:</label>
+        <input type="number" min="1" name="Customer_account_number" id="Customer_account_number">
+    </p>
+    <p>
+        <label for="Account_name">Account name:</label>
+        <input type="text" name="Account_name" id="Account_name">
+    </p>
+    <p>
+        <label for="Account_type">Account type:</label>
+        <input type="text" name="Account_type" id="Account_type">
+    </p>
+    <p>
+        <label for="Account_balance">Account balance:</label>
+        <input type="number" min="2000" name="Account_balance" id="Account_balance">
+    </p>
+    <p>
+        <label for="Account_start_date">Creation Date:</label>
+        <input type="date" name="Account_start_date" id="Account_start_date">
+    </p>
+    <p>
+        <label for="Account_interest_rate">Interest rate:</label>
+        <input type="text" name="Account_interest_rate" id="Account_interest_rate">
+    </p>
+    <p>
+        <label for="IFSC">IFSC CODE:</label>
+        <input type="text" name="IFSC" id="IFSC">
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

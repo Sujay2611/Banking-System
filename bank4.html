@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	input {
+
+  width: 50%;
+  padding: 10px 20px;
+  padding-left:0px;
+  margin: 8px 0;
+  border:2px solid red;
+  border-radius:4px;
+  box-sizing: border-box;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form
+{
+	padding-left:0px;
+	border:2px solid white;
+	display:inline-block;
+	
+}
+body{
+	padding-left:0px;
+	background-repeat: no-repeat;
+	background-size: 1500px 3000px;
+	font-family:monospace;
+	font-size:15px;
+	text-align:center;
+	background-color:lightblue;
+}
+h1{
+color:white;
+font-size:20px;
+}
+p{
+	color:white;
+	align:center;
+}
+</style>
+<title>Customer Form</title>
+</head>
+<body>
+<h1 style="text-align:center">Customer Details</h1>
+<form action="insert4.php" method="post">
+    <p>
+        <label for="Customer_id_number">Customer id:</label>
+        <input type="number" min="1" name="Customer_id_number" id="Customer_id_number">
+    </p>
+    <p>
+        <label for="Customer_name">Customer name:</label>
+        <input type="text" name="Customer_name" id="Customer_name">
+    </p>
+    <p>
+        <label for="Customer_age">Customer age:</label>
+        <input type="number" min="20" name="Customer_age" id="Customer_age">
+    </p>
+    <p>
+        <label for="Customer_salary">Customer salary:</label>
+        <input type="number" min="5000" name="Customer_salary" id="Customer_salary">
+    </p>
+    <p>
+        <label for="Customer_address">Customer address:</label>
+        <input type="text" name="Customer_address" id="Customer_address">
+    </p>
+    <p>
+        <label for="Customer_job">Customer job:</label>
+        <input type="text" name="Customer_job" id="Customer_job">
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
